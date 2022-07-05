@@ -7,7 +7,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.favorite.FavoriteFragment">
-
+    <include
+        android:id="@+id/include_layout_top_home_toolbar"
+        layout="@layout/custom_top_toolbar_classes_fragment" />
     <TextView
         android:id="@+id/text_classes"
         android:layout_width="match_parent"
