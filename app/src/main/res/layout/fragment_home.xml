@@ -35,4 +35,36 @@
         app:layout_constraintTop_toBottomOf="@+id/include_layout_content_wather"
         tools:listitem="@layout/item_class" />
 
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/title_homeworks_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classes_recycle_view">
+
+        <TextView
+            android:id="@+id/classes_part"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_weight="0.1"
+            android:text="Homework"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_homeworks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_homeworks_block"
+        tools:listitem="@layout/item_homework" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

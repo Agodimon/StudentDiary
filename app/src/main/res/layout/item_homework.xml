@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -19,8 +18,8 @@
             android:layout_marginStart="18dp"
             android:layout_marginTop="20dp"
             android:text="Literature"
-            android:textSize="13dp"
             android:textColor="@color/white"
+            android:textSize="13dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,34 +31,36 @@
             android:layout_marginTop="1dp"
             android:drawableStart="@android:drawable/ic_menu_recent_history"
             android:gravity="center"
-            android:textColor="#A7586E"
             android:text="2 days left"
+            android:textColor="#A7586E"
+            android:textSize="10sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/title_of_homework" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/image"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:id="@+id/image_lessons_homeworks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="80dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="5dp"
-            android:background="@drawable/background_homework_item"
+
             android:scaleType="centerInside"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/title_of_homework"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_books_foreground" />
+            android:src="@drawable/ic_retriangle_books" />
 
         <TextView
             android:id="@+id/homework_task"
-            android:layout_width="183dp"
-            android:layout_height="34dp"
+            android:layout_width="190dp"
+            android:layout_height="25dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="20dp"
             android:text="Read scenes 1.1 - 1.12 of The Master and Margarita"
             android:textColor="@color/white"
+            android:textSize="10sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -67,34 +68,30 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/person_man"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/oval"
-            android:src="@drawable/ic_person_man_foreground"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/homework_task" />
+            app:layout_constraintTop_toBottomOf="@id/homework_task"
+            android:src="@drawable/icon_pupal" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/pupil_next"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="36dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/oval"
+            android:background="@drawable/image_background"
             android:padding="2dp"
-            android:src="@drawable/ic_developer_foreground"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@id/person_man"
             app:layout_constraintTop_toBottomOf="@id/homework_task"
-            app:layout_constraintVertical_bias="0.0" />
-
-
+            app:layout_constraintVertical_bias="0.0"
+            android:src="@drawable/icon_pupal" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 </com.google.android.material.card.MaterialCardView>
