@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cnb_unselectedColor="@color/white">
 
     <item
         android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/title_home" />
+        android:icon="@drawable/ic_second_menu_foreground"
+        android:title="@string/title_home"
+        app:cnb_iconColor="@color/green_saint_patrick_color"
+
+        />
 
     <item
-        android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/title_dashboard" />
+        android:id="@+id/navigation_classes"
+        android:icon="@drawable/ic_calendar_foreground"
+        android:title="Classes"
+        app:cnb_iconColor="@color/green_saint_patrick_color"/>
 
     <item
-        android:id="@+id/navigation_notifications"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/title_notifications" />
+        android:id="@+id/navigation_task"
+        android:icon="@drawable/ic_list_foreground"
+        android:title="Task"
+        app:cnb_iconColor="@color/green_saint_patrick_color"/>
+    <item
+        android:id="@+id/navigation_favorite"
+        android:icon="@drawable/ic_star_foreground"
+        android:title="Favorite"
+        app:cnb_iconColor="@color/green_saint_patrick_color"/>
 
 </menu>

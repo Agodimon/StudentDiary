@@ -8,18 +8,67 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.studentdiary.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:label="Hi, Mike!"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_classesFragment"
+            app:destination="@id/classesFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_classes"
+            app:destination="@id/navigation_classes" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_task"
+            app:destination="@id/navigation_task" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.studentdiary.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_classes"
+        android:name="com.example.studentdiary.ui.favorite.FavoriteFragment"
+        android:label="Favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_navigation_classes_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_classes_to_classesFragment"
+            app:destination="@id/classesFragment" />
+        <action
+            android:id="@+id/action_navigation_classes_to_navigation_home2"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_classes_to_navigation_task"
+            app:destination="@id/navigation_task" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.studentdiary.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_task"
+        android:name="com.example.studentdiary.ui.task.TaskFragment"
+        android:label="Task"
+        tools:layout="@layout/fragment_task" >
+        <action
+            android:id="@+id/action_navigation_task_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_task_to_navigation_classes"
+            app:destination="@id/navigation_classes" />
+        <action
+            android:id="@+id/action_navigation_task_to_classesFragment"
+            app:destination="@id/classesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/classesFragment"
+        android:name="com.example.studentdiary.ui.classes.ClassesFragment"
+        android:label="ClassesFragment"
+        tools:layout="@layout/fragment_classes"
+        >
+        <action
+            android:id="@+id/action_classesFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_classesFragment_to_navigation_task"
+            app:destination="@id/navigation_task" />
+        <action
+            android:id="@+id/action_classesFragment_to_navigation_classes"
+            app:destination="@id/navigation_classes" />
+    </fragment>
 </navigation>
